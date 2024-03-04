@@ -58,4 +58,9 @@ public class Outlet {
     public Integer getTotalTrx(){
         return this.totalTrx;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Outlet [ %s, %s, %d, %d ]", outletName, period, omset, totalTrx);
+    }
 }
